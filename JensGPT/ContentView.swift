@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var input: String = "";
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Spacer()
+            TextField("foo",text: $input)
+            Text(input)
+            Button(action: {
+                self.input = "";
+            }, label: {
+                Text("Ask")
+            }).keyboardShortcut(.defaultAction)
+            
         }
         .padding()
+        .background(
+            .ultraThinMaterial
+        )
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
