@@ -7,6 +7,9 @@ class MovableWindow: NSWindow {
         self.isMovableByWindowBackground = true
         self.isOpaque = false
         self.backgroundColor = .clear
+        // Disable minimize and zoom buttons
+        self.standardWindowButton(.miniaturizeButton)?.isEnabled = false
+        self.standardWindowButton(.zoomButton)?.isEnabled = false
     }
 }
 
