@@ -14,6 +14,8 @@
 		B42E3DAD2A500088003D4122 /* JensGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E3DAC2A500088003D4122 /* JensGPTTests.swift */; };
 		B42E3DB72A500088003D4122 /* JensGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E3DB62A500088003D4122 /* JensGPTUITests.swift */; };
 		B42E3DB92A500088003D4122 /* JensGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E3DB82A500088003D4122 /* JensGPTUITestsLaunchTests.swift */; };
+		B43730C52A536E010022B118 /* MoveableWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43730C42A536E010022B118 /* MoveableWindow.swift */; };
+		B43730C72A536ED20022B118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43730C62A536ED20022B118 /* AppDelegate.swift */; };
 		B4A1F4492A52A7500087BACB /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = B4A1F4482A52A7500087BACB /* HotKey */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		B42E3DB22A500088003D4122 /* JensGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JensGPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42E3DB62A500088003D4122 /* JensGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JensGPTUITests.swift; sourceTree = "<group>"; };
 		B42E3DB82A500088003D4122 /* JensGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JensGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B43730C42A536E010022B118 /* MoveableWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveableWindow.swift; sourceTree = "<group>"; };
+		B43730C62A536ED20022B118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,13 @@
 		B42E3D992A500086003D4122 /* JensGPT */ = {
 			isa = PBXGroup;
 			children = (
+				B43730C32A536DE70022B118 /* Components */,
 				B42E3D9A2A500086003D4122 /* JensGPTApp.swift */,
 				B42E3D9C2A500086003D4122 /* ContentView.swift */,
 				B42E3D9E2A500087003D4122 /* Assets.xcassets */,
 				B42E3DA32A500087003D4122 /* JensGPT.entitlements */,
 				B42E3DA02A500087003D4122 /* Preview Content */,
+				B43730C62A536ED20022B118 /* AppDelegate.swift */,
 			);
 			path = JensGPT;
 			sourceTree = "<group>";
@@ -129,6 +135,14 @@
 				B42E3DB82A500088003D4122 /* JensGPTUITestsLaunchTests.swift */,
 			);
 			path = JensGPTUITests;
+			sourceTree = "<group>";
+		};
+		B43730C32A536DE70022B118 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B43730C42A536E010022B118 /* MoveableWindow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43730C72A536ED20022B118 /* AppDelegate.swift in Sources */,
+				B43730C52A536E010022B118 /* MoveableWindow.swift in Sources */,
 				B42E3D9D2A500086003D4122 /* ContentView.swift in Sources */,
 				B42E3D9B2A500086003D4122 /* JensGPTApp.swift in Sources */,
 			);
