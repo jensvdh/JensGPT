@@ -14,6 +14,7 @@
 		B42E3DAD2A500088003D4122 /* JensGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E3DAC2A500088003D4122 /* JensGPTTests.swift */; };
 		B42E3DB72A500088003D4122 /* JensGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E3DB62A500088003D4122 /* JensGPTUITests.swift */; };
 		B42E3DB92A500088003D4122 /* JensGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42E3DB82A500088003D4122 /* JensGPTUITestsLaunchTests.swift */; };
+		B4A1F4492A52A7500087BACB /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = B4A1F4482A52A7500087BACB /* HotKey */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A1F4492A52A7500087BACB /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = JensGPT;
+			packageProductDependencies = (
+				B4A1F4482A52A7500087BACB /* HotKey */,
+			);
 			productName = JensGPT;
 			productReference = B42E3D972A500086003D4122 /* JensGPT.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = B42E3D8E2A500086003D4122;
+			packageReferences = (
+				B4A1F4472A52A7500087BACB /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			productRefGroup = B42E3D982A500086003D4122 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -570,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4A1F4472A52A7500087BACB /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4A1F4482A52A7500087BACB /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4A1F4472A52A7500087BACB /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B42E3D8F2A500086003D4122 /* Project object */;
 }
